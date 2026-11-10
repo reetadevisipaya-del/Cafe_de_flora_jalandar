@@ -1,0 +1,15 @@
+# Dependencies & Environment
+node_modules/
+.env
+.env.local
+
+# Operating System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary / Scratch Files
+test_img.jpg
+menu_raw_text.json
+*.tmp

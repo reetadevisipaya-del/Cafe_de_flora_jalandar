@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Background Badge (Muted Sage) -->
+  <rect width="240" height="240" rx="120" fill="#71866D" />
+  <circle cx="120" cy="120" r="113" fill="none" stroke="#EAE8D9" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6" />
+  
+  <!-- Botanical Leaf Wreath Top & Sides -->
+  <g stroke="#FFFFFF" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left Wreath Branch -->
+    <path d="M 68 110 C 62 92, 75 66, 100 50" />
+    <path d="M 72 98 C 64 94, 60 85, 66 82 C 71 85, 75 92, 72 98 Z" fill="#FFFFFF" fill-opacity="0.22" />
+    <path d="M 78 82 C 71 76, 70 68, 77 64 C 82 70, 83 77, 78 82 Z" fill="#FFFFFF" fill-opacity="0.22" />
+    <path d="M 90 65 C 84 57, 85 49, 93 47 C 97 54, 95 61, 90 65 Z" fill="#FFFFFF" fill-opacity="0.22" />
+    
+    <!-- Right Wreath Branch -->
+    <path d="M 172 110 C 178 92, 165 66, 140 50" />
+    <path d="M 168 98 C 176 94, 180 85, 174 82 C 169 85, 165 92, 168 98 Z" fill="#FFFFFF" fill-opacity="0.22" />
+    <path d="M 162 82 C 169 76, 170 68, 163 64 C 158 70, 157 77, 162 82 Z" fill="#FFFFFF" fill-opacity="0.22" />
+    <path d="M 150 65 C 156 57, 155 49, 147 47 C 143 54, 145 61, 150 65 Z" fill="#FFFFFF" fill-opacity="0.22" />
+
+    <!-- Delicate Florals (Pink & Butter Yellow) -->
+    <circle cx="60" cy="78" r="4.5" fill="#D99C9B" stroke="#FFFFFF" stroke-width="1" />
+    <circle cx="180" cy="78" r="4.5" fill="#D7B65F" stroke="#FFFFFF" stroke-width="1" />
+    <circle cx="120" cy="42" r="4.5" fill="#D99C9B" stroke="#FFFFFF" stroke-width="1" />
+
+    <!-- Coffee Cup in Center -->
+    <path d="M 100 84 L 140 84 C 140 98, 134 107, 120 107 C 106 107, 100 98, 100 84 Z" fill="#3E5140" stroke="#FFFFFF" stroke-width="2.2" />
+    <!-- Cup Handle -->
+    <path d="M 140 87 C 148 87, 149 97, 139 99" stroke="#FFFFFF" stroke-width="2" />
+    <!-- Saucer -->
+    <path d="M 94 110 L 146 110" stroke="#FFFFFF" stroke-width="2.2" />
+    
+    <!-- Rising Aroma Steams -->
+    <path d="M 112 79 C 110 73, 114 69, 112 64" stroke="#D7B65F" stroke-width="1.8" />
+    <path d="M 120 80 C 118 72, 122 68, 120 61" stroke="#FFFFFF" stroke-width="2" />
+    <path d="M 128 79 C 126 73, 130 69, 128 64" stroke="#D7B65F" stroke-width="1.8" />
+  </g>
+
+  <!-- Script Lettering: Café Dé -->
+  <text x="120" y="148" text-anchor="middle" fill="#FFFFFF" font-family="'Playfair Display', Georgia, serif" font-style="italic" font-size="32" font-weight="600" letter-spacing="0.5">Café Dé</text>
+  
+  <!-- Botanical divider line -->
+  <line x1="50" y1="161" x2="100" y2="161" stroke="#D7B65F" stroke-width="1.2" opacity="0.8" />
+  <circle cx="120" cy="161" r="3" fill="#D99C9B" stroke="#FFFFFF" stroke-width="0.8" />
+  <line x1="140" y1="161" x2="190" y2="161" stroke="#D7B65F" stroke-width="1.2" opacity="0.8" />
+  
+  <!-- Serif Caps: FLORAA -->
+  <text x="120" y="184" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="7">FLORAA</text>
+  <text x="120" y="200" text-anchor="middle" fill="#EAE8D9" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="500" letter-spacing="3.5" opacity="0.9">JALANDHAR</text>
+</svg>

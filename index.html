@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Dé Floraa | Where Every Moment Blooms | Jalandhar</title>
+  <meta name="description" content="Welcome to Café Dé Floraa, Jalandhar's botanical garden café. Artisanal specialty coffee, handcrafted pizzas, Italian pastas, decadent desserts, and warm cozy moments on 66 Feet Road." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="media/logo.svg" />
+  
+  <!-- Google Fonts: Playfair Display, Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar">
+    <span>🌸 <strong>Welcome to Café Dé Floraa:</strong> A little garden of good moments on 66 Feet Road, Urban Estate Phase 2, Jalandhar</span>
+    <span>📞 <a href="tel:+919878523603">Call for Table Booking: 9878-523-603</a></span>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Café Dé Floraa Home">
+        <div class="logo-badge">
+          <img src="media/logo.svg" alt="Café Dé Floraa Emblem" />
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-script">Café Dé Floraa</span>
+          <span class="logo-tagline">Jalandhar · Garden Café</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+          <li><a href="#brewing" class="nav-link">Signature Sips</a></li>
+          <li><a href="#signatures" class="nav-link">Chef's Bites</a></li>
+          <li><a href="#menu-section" class="nav-link">Full Menu</a></li>
+          <li><a href="#reels-gallery" class="nav-link">Ambience & Reels</a></li>
+          <li><a href="#visit" class="nav-link">Find Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons in Header -->
+      <div class="header-actions">
+        <!-- Direct Dial Reservation Button (Insta Phone: 9878-523-603) -->
+        <a href="tel:+919878523603" class="btn-reservation" title="Call for Table Reservation">
+          <svg viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          <span>Book a Reservation</span>
+        </a>
+
+        <!-- Vibrant Order Now Button -->
+        <a href="#menu-section" class="btn-order-now" title="Browse and Order Handcrafted Food">
+          <span>🌸 Order Now</span>
+        </a>
+
+        <!-- Cart Trigger Button -->
+        <button class="btn-cart-trigger" onclick="openCartDrawer()" aria-label="View Shopping Basket">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"></path>
+          </svg>
+          <span class="cart-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" onclick="toggleMobileNav()" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         HERO SECTION: Cinematic Garden Experience
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Background Video Montage with poster fallback -->
+      <video id="heroVideoPlayer" class="hero-video-bg" autoplay loop muted playsinline poster="media/table-feast.jpg">
+        <source src="media/hero-dreamy.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <!-- Floating Botanical Emblem -->
+        <div class="hero-emblem">
+          <img src="media/logo.svg" alt="Café Dé Floraa Badge" />
+        </div>
+
+        <div class="hero-subhead">
+          <span>✦ A Little Garden of Good Moments ✦</span>
+        </div>
+
+        <h1 class="hero-title">
+          Café Dé Floraa<br />
+          <span>Where every moment blooms.</span>
+        </h1>
+
+        <p class="hero-tagline">
+          Fresh botanical elegance, specialty coffee roasts, and soulful food crafted with love in Jalandhar.
+        </p>
+
+        <div class="hero-pills">
+          <span>☕ ARTISANAL COFFEE</span>
+          <span>•</span>
+          <span>🍕 HAND-TOSSED PIZZAS</span>
+          <span>•</span>
+          <span>🍹 BOTANICAL COOLERS</span>
+          <span>•</span>
+          <span>🍰 DECADENT BAKES</span>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#menu-section" class="btn-order-now" style="font-size: 1.05rem; padding: 0.9rem 2.2rem;">
+            <span>🌸 Explore Menu & Order Online</span>
+          </a>
+
+          <!-- Direct Phone Dial Table Booking -->
+          <a href="tel:+919878523603" class="hero-btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <span>Book Table (9878-523-603)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video Montage Reel Switcher -->
+      <div class="hero-video-switcher" aria-label="Reel Switcher">
+        <button class="video-tab-btn active" data-video="media/hero-dreamy.mp4">🌸 Dreamy Garden</button>
+        <button class="video-tab-btn" data-video="media/coffee-brew.mp4">☕ Espresso Pull</button>
+        <button class="video-tab-btn" data-video="media/watermelon-mojito.mp4">🍹 Vibrant Sips</button>
+        <button class="video-tab-btn" data-video="media/ambience-tour.mp4">🌿 Ambience Tour</button>
+        <button class="video-tab-btn" data-video="media/cooking-kitchen.mp4">🍳 Kitchen Craft</button>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         EDITORIAL: A Place Called Floraa
+         ====================================================================== -->
+    <section class="section-editorial" id="about">
+      <div class="container editorial-grid">
+        
+        <div class="editorial-visual-frame">
+          <img src="media/cafe-facade.jpg" alt="Café Dé Floraa Facade on 66 Feet Road" class="editorial-main-img" />
+          <div class="editorial-badge-floating">
+            <h4>Come for the food, stay for the soul.</h4>
+            <p>66 Feet Road, Phase 2, Urban Estate, Jalandhar</p>
+          </div>
+        </div>
+
+        <div class="editorial-text-wrap">
+          <span class="section-label">✦ Discover Café Dé Floraa</span>
+          <h2 class="section-title">
+            A little escape from <em>the everyday.</em>
+          </h2>
+          <p class="editorial-copy">
+            Café Dé Floraa was born out of a desire for warmth, gentle conversations, and vibrant culinary craft. 
+            We are not a dark, hurried coffee shop — here, lush botanical greens meet soothing ivory tones, 
+            delicate florals adorn the tables, and the aroma of freshly pulled 9-bar espresso welcomes you into a tranquil garden sanctuary.
+          </p>
+          <p class="editorial-copy">
+            Whether you're sharing a steaming plate of Aglio e Olio, biting into our molten Cheese Mushroom Toast, 
+            or sipping on a handcrafted Lotus Biscoff Shake, every single moment here is crafted to make you slow down and smile.
+          </p>
+
+          <div class="features-check-grid">
+            <div class="feature-check-item">
+              <span class="icon">✓</span>
+              <span>Authentic 9-Bar Espresso Bar</span>
+            </div>
+            <div class="feature-check-item">
+              <span class="icon">✓</span>
+              <span>Lush Garden Floral Ambience</span>
+            </div>
+            <div class="feature-check-item">
+              <span class="icon">✓</span>
+              <span>Handcrafted Pastas & Pizzas</span>
+            </div>
+            <div class="feature-check-item">
+              <span class="icon">✓</span>
+              <span>Fresh Delivery via WhatsApp</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="tel:+919878523603" class="btn-reservation">
+              <span>Reserve a Table</span>
+            </a>
+            <a href="#menu-section" class="btn-order-now">
+              <span>View Full Garden Menu</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SIGNATURE SIPS: Something Lovely is Brewing
+         ====================================================================== -->
+    <section class="section-brewing" id="brewing">
+      <div class="container">
+        
+        <div class="section-header-centered">
+          <span class="section-label">✦ Botanical Sips & Brews</span>
+          <h2 class="section-title">Something lovely <em>is brewing.</em></h2>
+          <p class="section-subtitle">From Italian espresso extractions to vibrant botanical mocktails, discover our guest-favorite refreshments.</p>
+        </div>
+
+        <div class="brewing-grid" id="signatureDrinksGrid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SIGNATURE BITES: Made to be Savoured
+         ====================================================================== -->
+    <section class="section-signatures" id="signatures">
+      <div class="container">
+        
+        <div class="section-header-centered">
+          <span class="section-label">✦ Chef's Table</span>
+          <h2 class="section-title">Made to be <em>savoured.</em></h2>
+          <p class="section-subtitle">Freshly tossed, slow-simmered, and plated with exquisite care.</p>
+        </div>
+
+        <!-- Featured Editorial Showcase: Cheese Mushroom Toast -->
+        <div class="signature-editorial-hero">
+          <div class="sig-hero-img-box">
+            <img src="media/cheese-mushroom-toast.jpg" alt="Cheese Mushroom Toast" />
+          </div>
+          <div class="sig-hero-content">
+            <div class="sig-hero-tags">
+              <span class="sig-tag">Most Loved</span>
+              <span class="sig-tag">Signature Toast</span>
+            </div>
+            <h3 class="section-title">Cheese Mushroom Toast</h3>
+            <p class="editorial-copy">
+              Our signature artisanal toasted bread, loaded with herb-sautéed wild button mushrooms, roasted thyme, and a thick, molten mozzarella-cheddar blanket that pulls with every bite.
+            </p>
+            <div class="sig-hero-price">₹349.00</div>
+            <div>
+              <button class="btn-order-now" onclick="addItemToCart('f-4')">
+                <span>Add Toast to Order</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Featured Editorial Showcase: Spaghetti Aglio E Olio -->
+        <div class="signature-editorial-hero" style="margin-bottom: 0;">
+          <div class="sig-hero-content" style="order: 1;">
+            <div class="sig-hero-tags">
+              <span class="sig-tag">Authentic Italian</span>
+              <span class="sig-tag">Chef's Pride</span>
+            </div>
+            <h3 class="section-title">Spaghetti Aglio E Olio</h3>
+            <p class="editorial-copy">
+              Al dente durum wheat spaghetti gently swirled in cold-pressed extra virgin olive oil, sliced golden garlic cloves, garden fresh parsley, crushed chili flakes, and blistered cherry tomatoes.
+            </p>
+            <div class="sig-hero-price">₹414.70</div>
+            <div>
+              <button class="btn-order-now" onclick="addItemToCart('f-2')">
+                <span>Add Spaghetti to Order</span>
+              </button>
+            </div>
+          </div>
+          <div class="sig-hero-img-box" style="order: 2;">
+            <img src="media/spaghetti-aglio-olio.jpg" alt="Spaghetti Aglio E Olio" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         COMPLETE CATEGORIZED INTERACTIVE MENU
+         ====================================================================== -->
+    <section class="section-menu" id="menu-section">
+      <div class="container">
+        
+        <div class="section-header-centered">
+          <span class="section-label">✦ Complete Botanical Menu</span>
+          <h2 class="section-title">Explore the <em>Garden of Flavors.</em></h2>
+          <p class="section-subtitle">Real recipes, transparent prices in Indian Rupees, and direct WhatsApp delivery.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="menu-filter-controls">
+          
+          <!-- Search & Diet Filter Row -->
+          <div class="menu-search-bar-row">
+            <div class="menu-search-input-wrapper">
+              <svg class="search-icon-svg" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+              </svg>
+              <input type="text" id="menuSearchInput" class="menu-search-input" placeholder="Search delicacies, coffee, momos, pizzas..." oninput="handleSearchInput(event)" />
+            </div>
+
+            <div class="diet-filter-group" aria-label="Dietary Filter">
+              <button class="diet-pill-btn active" data-diet="all" onclick="setDietFilter('all')">All Flavors</button>
+              <button class="diet-pill-btn" data-diet="veg" onclick="setDietFilter('veg')">🟢 Pure Veg</button>
+              <button class="diet-pill-btn" data-diet="non-veg" onclick="setDietFilter('non-veg')">🔴 Non-Veg</button>
+              <button class="diet-pill-btn" data-diet="chef" onclick="setDietFilter('chef')">⭐ Signatures</button>
+            </div>
+          </div>
+
+          <!-- Category Navigation Pills -->
+          <div class="category-nav-wrapper">
+            <div class="category-nav-scroll" id="categoryScrollContainer">
+              <!-- Populated dynamically via app.js -->
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-items-grid" id="menuItemsGrid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         INSTAGRAM REELS & AMBIENCE GALLERY
+         ====================================================================== -->
+    <section class="section-reels" id="reels-gallery">
+      <div class="container">
+        
+        <div class="section-header-centered">
+          <span class="section-label" style="color: var(--color-yellow);">✦ Real Moments, Captured</span>
+          <h2 class="section-title">Life inside <em>Café Dé Floraa.</em></h2>
+          <p class="section-subtitle">Step inside our floral haven through genuine reels and stories from our guests.</p>
+        </div>
+
+        <div class="reels-grid">
+          
+          <!-- Reel 1: Ambience Tour -->
+          <div class="reel-card">
+            <video class="reel-video" loop muted playsinline onmouseover="this.play()" onmouseout="this.pause()">
+              <source src="media/ambience-tour.mp4" type="video/mp4" />
+            </video>
+            <div class="reel-overlay">
+              <span class="reel-top-badge">🌿 Ambience Tour</span>
+              <div class="reel-play-btn">▶</div>
+              <div class="reel-footer">
+                <h4 class="reel-title">Garden Tour</h4>
+                <p class="reel-caption">Cozy seating, botanical walls & floral ceilings.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reel 2: Hot Espresso Pull -->
+          <div class="reel-card">
+            <video class="reel-video" loop muted playsinline onmouseover="this.play()" onmouseout="this.pause()">
+              <source src="media/coffee-brew.mp4" type="video/mp4" />
+            </video>
+            <div class="reel-overlay">
+              <span class="reel-top-badge">☕ Brewed with Love</span>
+              <div class="reel-play-btn">▶</div>
+              <div class="reel-footer">
+                <h4 class="reel-title">Fresh Espresso Pull</h4>
+                <p class="reel-caption">Every single bean tells a story at Floraa.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reel 3: Signature Biscoff Shake -->
+          <div class="reel-card">
+            <video class="reel-video" loop muted playsinline onmouseover="this.play()" onmouseout="this.pause()">
+              <source src="media/biscoff-shake.mp4" type="video/mp4" />
+            </video>
+            <div class="reel-overlay">
+              <span class="reel-top-badge">⭐ Viral Shake</span>
+              <div class="reel-play-btn">▶</div>
+              <div class="reel-footer">
+                <h4 class="reel-title">Lotus Biscoff Shake</h4>
+                <p class="reel-caption">Blended with real speculoos cookies & caramel.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reel 4: Customer Guest Review -->
+          <div class="reel-card">
+            <video class="reel-video" loop muted playsinline onmouseover="this.play()" onmouseout="this.pause()">
+              <source src="media/customer-review-1.mp4" type="video/mp4" />
+            </video>
+            <div class="reel-overlay">
+              <span class="reel-top-badge">💬 Guest Moments</span>
+              <div class="reel-play-btn">▶</div>
+              <div class="reel-footer">
+                <h4 class="reel-title">Loved by Jalandhar</h4>
+                <p class="reel-caption">"The pasta and coffee here are unbeatable."</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="insta-follow-banner">
+          <a href="https://www.instagram.com/cafedefloraajalandhar?exln=MWZqNzM3MHU0N2ltaw==" target="_blank" rel="noopener" class="btn-insta">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Follow @cafedefloraajalandhar on Instagram</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         RESERVATION CALLOUT BANNER
+         ====================================================================== -->
+    <section class="section-reservation-banner" id="reservation">
+      <div class="container">
+        
+        <div class="reservation-card-box">
+          <div class="res-video-wrap">
+            <video autoplay loop muted playsinline>
+              <source src="media/ambience-tour.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="res-content-wrap">
+            <span class="section-label">✦ Plan Your Cozy Gathering</span>
+            <h2 class="section-title">Reserve your <em>favorite table.</em></h2>
+            <p class="editorial-copy">
+              Planning a birthday, romantic date, reunion, or peaceful work session? 
+              Give us a quick call to ensure your table is decorated and waiting for you.
+            </p>
+
+            <a href="tel:+919878523603" class="res-phone-highlight" title="Click to Call Immediately">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              <span>+91 9878-523-603</span>
+            </a>
+
+            <div>
+              <a href="tel:+919878523603" class="btn-reservation" style="font-size: 1rem; padding: 0.8rem 1.8rem;">
+                <span>Click to Dial Reservations Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         LOCATION, HOURS & MAP
+         ====================================================================== -->
+    <section class="section-visit" id="visit">
+      <div class="container">
+        
+        <div class="section-header-centered">
+          <span class="section-label">✦ Visit Floraa</span>
+          <h2 class="section-title">Find your way <em>to our garden.</em></h2>
+          <p class="section-subtitle">Located conveniently in the heart of Urban Estate Phase 2, Jalandhar.</p>
+        </div>
+
+        <div class="visit-grid">
+          
+          <!-- Contact & Details Card -->
+          <div class="contact-card-box">
+            
+            <div class="contact-detail-row">
+              <div class="contact-icon-circle">📍</div>
+              <div class="contact-text">
+                <h5>Our Address</h5>
+                <p>66 Feet Road, near Haider Husain Salon, Phase 2, Urban Estate Phase II, Jalandhar, Punjab 144005</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <div class="contact-icon-circle">📞</div>
+              <div class="contact-text">
+                <h5>Reservations & Direct Call</h5>
+                <p><a href="tel:+919878523603">+91 9878-523-603</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <div class="contact-icon-circle">💬</div>
+              <div class="contact-text">
+                <h5>WhatsApp Express Delivery</h5>
+                <p><a href="https://wa.me/919625244683" target="_blank" rel="noopener">+91 96252 44683</a></p>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <div class="contact-icon-circle">⏰</div>
+              <div class="contact-text">
+                <h5>Opening Hours</h5>
+                <p>Monday – Sunday: 11:00 AM – 11:00 PM</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-row">
+              <div class="contact-icon-circle">✉️</div>
+              <div class="contact-text">
+                <h5>Email Inquiries</h5>
+                <p><a href="mailto:cafedefloraajalandhar@gmail.com">cafedefloraajalandhar@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="https://zomato.onelink.me/xqzv/9n7pk4g9" target="_blank" rel="noopener" class="btn-reservation" style="border-color: #E23744; color: #E23744;">
+                <span>View on Zomato</span>
+              </a>
+              <a href="https://maps.google.com/?q=Cafe+De+Floraa+66+Feet+Road+Jalandhar" target="_blank" rel="noopener" class="btn-reservation">
+                <span>Open in Google Maps</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Embedded Google Map -->
+          <div class="map-container-box">
+            <iframe 
+              title="Café Dé Floraa Location Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.805213404495!2d75.59253487627447!3d31.295280958229606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5b81a7b1b3bf%3A0x6b198a28e83b8b1e!2sUrban%20Estate%20Phase%20II%2C%20Jalandhar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1715000000000!5m2!1sen!2sin"
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-badge" style="background: var(--color-sage);">
+              <img src="media/logo.svg" alt="Café Dé Floraa Logo" />
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-script" style="color: #FFF;">Café Dé Floraa</span>
+              <span class="logo-tagline" style="color: var(--color-yellow);">Jalandhar · Garden Café</span>
+            </div>
+          </div>
+          <p>
+            A warm, botanical haven in Jalandhar. Handcrafted coffees, authentic Italian pasta, woodfire-style pizzas, and memorable conversations in every cup.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Quick Delights</h5>
+          <ul class="footer-links">
+            <li><a href="#menu-section" onclick="setCategory('coffee-hot')">Espresso Bar</a></li>
+            <li><a href="#menu-section" onclick="setCategory('coffee-cold')">Biscoff Shakes</a></li>
+            <li><a href="#menu-section" onclick="setCategory('pizza')">Artisan Pizzas</a></li>
+            <li><a href="#menu-section" onclick="setCategory('pasta')">Spaghetti Aglio e Olio</a></li>
+            <li><a href="#menu-section" onclick="setCategory('desserts')">Blueberry Cheesecake</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Experience</h5>
+          <ul class="footer-links">
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#reels-gallery">Instagram Reels</a></li>
+            <li><a href="tel:+919878523603">Book a Table</a></li>
+            <li><a href="#visit">Location & Directions</a></li>
+            <li><a href="https://zomato.onelink.me/xqzv/9n7pk4g9" target="_blank" rel="noopener">Zomato Listing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Direct Contact</h5>
+          <p style="font-size: 0.9rem; margin-bottom: 0.6rem;">
+            <strong>Table Reservations:</strong><br />
+            <a href="tel:+919878523603" style="color: var(--color-yellow); font-size: 1.05rem; font-weight: 700;">+91 9878-523-603</a>
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.6rem;">
+            <strong>WhatsApp Orders:</strong><br />
+            <a href="https://wa.me/919625244683" target="_blank" rel="noopener" style="color: #25D366; font-size: 1.05rem; font-weight: 700;">+91 96252 44683</a>
+          </p>
+          <p style="font-size: 0.85rem; opacity: 0.8;">
+            66 Feet Rd, Phase 2, Urban Estate, Jalandhar
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Café Dé Floraa, Jalandhar. All Rights Reserved.</div>
+        <div>Where Every Moment Blooms 🌸 Handcrafted with care.</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       CART SLIDE-OVER DRAWER
+       ====================================================================== -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay" onclick="closeCartDrawer()">
+    <div class="cart-drawer" onclick="event.stopPropagation()">
+      
+      <div class="cart-header">
+        <div class="cart-header-title">
+          <span style="font-size: 1.5rem;">🌸</span>
+          <h3>Your Garden Basket</h3>
+        </div>
+        <button class="btn-close-cart" onclick="closeCartDrawer()" aria-label="Close Basket">✕</button>
+      </div>
+
+      <div class="cart-items-container" id="cartItemsContainer">
+        <!-- Populated dynamically via app.js -->
+      </div>
+
+      <div class="cart-footer-summary" id="cartFooterSummary" style="display: none;">
+        <div class="cart-calc-row">
+          <span>Item Subtotal</span>
+          <span id="cartSubtotalAmount">₹0.00</span>
+        </div>
+        <div class="cart-calc-row">
+          <span>Estimated Delivery</span>
+          <span id="cartDeliveryFeeAmount">FREE</span>
+        </div>
+        <div class="cart-calc-row total">
+          <span>Grand Total</span>
+          <span id="cartGrandTotalAmount">₹0.00</span>
+        </div>
+
+        <button class="btn-proceed-checkout" onclick="openCheckoutModal()">
+          <span>Proceed to Checkout</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       CHECKOUT MODAL
+       User Requirement:
+       "after adding food to cart when customer clicks on checkout they are asked 
+        there name phone no mode of payment and adress obviously only to places where 
+        they can deliver and after licking ok they are directly sent to whatsapp no>:+91 9625244683 
+        and there entire order summary is given and sent"
+       ====================================================================== -->
+  <div class="checkout-modal-overlay" id="checkoutModalOverlay" onclick="closeCheckoutModal()">
+    <div class="checkout-modal-box" onclick="event.stopPropagation()">
+      
+      <div class="checkout-modal-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <span style="font-size: 1.4rem;">🛍️</span>
+          <h3>Complete Your Order</h3>
+        </div>
+        <button class="btn-close-cart" onclick="closeCheckoutModal()" aria-label="Close Checkout">✕</button>
+      </div>
+
+      <form class="checkout-form-content" onsubmit="handleCheckoutSubmit(event)">
+        
+        <div id="checkoutOrderSummaryBrief" style="background: var(--color-ivory); padding: 0.75rem 1rem; border-radius: var(--radius-sm); margin-bottom: 1.25rem; font-size: 0.88rem; color: var(--color-botanical);">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="custName">Your Full Name <span>*</span></label>
+          <input type="text" id="custName" class="form-control" placeholder="e.g. Simran Kaur" required />
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label for="custPhone">Mobile Number (10 digits) <span>*</span></label>
+          <input type="tel" id="custPhone" class="form-control" placeholder="e.g. 9876543210" pattern="[0-9]{10}" required />
+        </div>
+
+        <!-- Delivery Zone Selector -->
+        <div class="form-group">
+          <label for="checkoutDeliveryZone">Select Delivery Locality (Jalandhar) <span>*</span></label>
+          <select id="checkoutDeliveryZone" class="form-control" required>
+            <!-- Populated dynamically via app.js with valid delivery areas -->
+          </select>
+        </div>
+
+        <!-- Delivery Address -->
+        <div class="form-group">
+          <label for="custAddress">Full Street Address & Landmark <span>*</span></label>
+          <textarea id="custAddress" class="form-control" rows="2" placeholder="House/Flat No., Street, Landmark..." required></textarea>
+        </div>
+
+        <!-- Mode of Payment -->
+        <div class="form-group">
+          <label>Mode of Payment <span>*</span></label>
+          <div class="payment-modes-grid">
+            <label class="payment-radio-label">
+              <input type="radio" name="paymentMode" value="Cash on Delivery (COD)" checked />
+              <span>💵 Cash on Delivery</span>
+            </label>
+            <label class="payment-radio-label">
+              <input type="radio" name="paymentMode" value="UPI / QR Code on Delivery" />
+              <span>📱 UPI on Delivery (GPay / Paytm)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Special Instructions -->
+        <div class="form-group">
+          <label for="custNotes">Special Cooking or Delivery Instructions (Optional)</label>
+          <input type="text" id="custNotes" class="form-control" placeholder="e.g. Less spicy pasta, extra oregano, ring the doorbell" />
+        </div>
+
+        <div class="checkout-notice-box">
+          <span>🛵</span>
+          <span>We deliver hot and fresh across Jalandhar. Clicking <strong>Confirm Order</strong> below opens WhatsApp directly to our ordering desk <strong>+91 9625244683</strong> with your complete order breakdown.</span>
+        </div>
+
+        <button type="submit" class="btn-confirm-whatsapp">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>Confirm Order & Send via WhatsApp</span>
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Floating Quick Buttons -->
+  <aside class="floating-action-bar">
+    <!-- WhatsApp Direct -->
+    <a href="https://wa.me/919625244683" target="_blank" rel="noopener" class="floating-btn whatsapp" title="Chat on WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+
+    <!-- Direct Phone Call -->
+    <a href="tel:+919878523603" class="floating-btn call" title="Call Reservations: 9878-523-603">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
+    </a>
+
+    <!-- Quick Cart Trigger -->
+    <button class="floating-btn cart" onclick="openCartDrawer()" title="View Order Basket">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"></path>
+      </svg>
+      <span class="cart-badge" style="display: none;">0</span>
+    </button>
+  </aside>
+
+  <!-- Mobile Sticky Bottom Navigation -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Actions">
+    <a href="tel:+919878523603" class="btn-reservation">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
+      <span>Book Table</span>
+    </a>
+    <a href="#menu-section" class="btn-order-now">
+      <span>🌸 Order Online</span>
+    </a>
+    <button class="btn-cart-trigger" onclick="openCartDrawer()" aria-label="View Cart">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"></path>
+      </svg>
+      <span class="cart-badge" style="display: none;">0</span>
+    </button>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
