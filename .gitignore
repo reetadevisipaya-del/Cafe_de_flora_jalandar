@@ -13,3 +13,9 @@ Thumbs.db
 test_img.jpg
 menu_raw_text.json
 *.tmp
+
+# Raw unorganized root assets (clean versions are in media/)
+/Screenshot_*
+/pdf_img_*
+/*.mp4
+
