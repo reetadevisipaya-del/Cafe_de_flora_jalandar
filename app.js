@@ -521,23 +521,43 @@ _Please confirm my order and share the expected delivery time!_`;
   window.open(whatsappUrl, '_blank');
 }
 
-// Mobile Menu Toggle
-function toggleMobileNav() {
-  const links = document.querySelector('.nav-links');
-  if (links) {
-    if (links.style.display === 'flex') {
-      links.style.display = 'none';
-    } else {
-      links.style.display = 'flex';
-      links.style.flexDirection = 'column';
-      links.style.position = 'absolute';
-      links.style.top = '80px';
-      links.style.left = '0';
-      links.style.width = '100%';
-      links.style.background = '#FFFFFF';
-      links.style.padding = '1.5rem';
-      links.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-      links.style.zIndex = '105';
-    }
+// Mobile Drawer Navigation Controls
+function openMobileNav() {
+  const drawer = document.getElementById('mobileDrawerOverlay');
+  if (drawer) {
+    drawer.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeMobileNav() {
+  const drawer = document.getElementById('mobileDrawerOverlay');
+  if (drawer) {
+    drawer.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+// Touch-Friendly Reel Video Play/Pause Toggle
+function toggleReelVideo(cardEl) {
+  const video = cardEl.querySelector('.reel-video');
+  const playBtn = cardEl.querySelector('.reel-play-btn');
+  if (!video) return;
+
+  if (video.paused) {
+    // Pause other reel videos first
+    document.querySelectorAll('.reel-video').forEach(v => {
+      if (v !== video) v.pause();
+    });
+    document.querySelectorAll('.reel-play-btn').forEach(b => {
+      b.textContent = '▶';
+    });
+
+    video.play().then(() => {
+      if (playBtn) playBtn.textContent = '❚❚';
+    }).catch(() => {});
+  } else {
+    video.pause();
+    if (playBtn) playBtn.textContent = '▶';
   }
 }
